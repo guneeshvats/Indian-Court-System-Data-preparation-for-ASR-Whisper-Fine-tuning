@@ -30,3 +30,14 @@ After fine-tuning, we evaluated the model using the Word Error Rate (WER) metric
 
 ## Conclusion
 The project successfully fine-tuned the Whisper model to improve transcription accuracy for Supreme Court hearing data. By using speaker diarization and segment-based alignment, we reduced errors related to overlapping speech and complex dialogues. Forced alignment was not needed in this context as the segment-based approach was sufficient and less computationally intensive.
+
+
+
+## References 
+1. @inproceedings{Bredin2021,
+  Title = {{End-to-end speaker segmentation for overlap-aware resegmentation}},
+  Author = {{Bredin}, Herv{\'e} and {Laurent}, Antoine},
+  Booktitle = {Proc. Interspeech 2021},
+  Address = {Brno, Czech Republic},
+  Month = {August},
+  Year = {2021},
