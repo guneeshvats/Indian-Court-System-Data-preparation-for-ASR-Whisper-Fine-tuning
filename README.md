@@ -12,6 +12,11 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 
 ## Steps to Run the Project
 
+Working with `python - 3.12.4`
+```bash
+   pip install -r requirements.txt
+```
+
 ### 1. Data Preparation
 We started by preparing the dataset given to us in `dataset.csv` file:
 - Download the audio files and pdf transcripts given through the links in the csv file.
