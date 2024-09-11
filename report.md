@@ -22,6 +22,9 @@ We first processed the raw audio data by removing silence, identifying speaker c
 ### 2. Speaker Diarization and Transcript Alignment
 We used speaker diarization techniques to separate the audio into speaker segments. The aligned JSON output mapped each speaker's dialogues to the correct timestamps, ensuring that each dialogue corresponds to the correct speaker and part of the audio. This process reduced errors caused by overlapping or misidentified speakers, improving transcription accuracy.
 
+![image](https://github.com/user-attachments/assets/73b439b0-1148-4716-b4da-8bbe224b58d0)
+
+
 ### 3. Forced Alignment (Consideration)
 While forced alignment (aligning every word in the transcript with its exact timestamp in the audio) could provide more granular alignment, it was not necessary for our task. Segment-level alignment suffices for ASR fine-tuning, and forced alignment would have added unnecessary complexity without significant benefits.
 
