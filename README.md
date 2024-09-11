@@ -11,11 +11,13 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 - **README.md**: This file.
 
 ## Steps to Run the Project
-
+### 0. Setting up the environment 
 Working with `python - 3.12.5`
-```bash
+Set up a conda environment or a python env, either is fine :
+   ```bash
+   conda create -n "myenv" python=3.12.5 
    pip install -r requirements.txt
-```
+   ```
 
 ### 1. Data Preparation
 We started by preparing the dataset given to us in `dataset.csv` file:
