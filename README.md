@@ -31,7 +31,10 @@ After preparing the data, follow these steps to fine-tune the Whisper model:
 1. Install the necessary libraries:
    ```bash
    pip install transformers datasets torchaudio librosa
-
+2. Download the Diarization model
+   ```bash
+   huggingface-cli download pyannote/speaker-diarization
+   huggingface-cli download pyannote/segmentation
 
 ## Folder Structure 
 ```ASR_Fine_Tuning_Project/
