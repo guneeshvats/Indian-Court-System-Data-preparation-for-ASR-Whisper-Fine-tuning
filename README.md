@@ -10,9 +10,12 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 - **report.md**: A detailed report of the project
 - **README.md**: This file.
 
-- To check how many CPU cores you have on your System Run this command :
-   ````sysctl -n hw.ncpu````
-  This will be helpful for the parameter - `num_workers` in `silence_removal_parallel.py` file from audio files
+
+To check how many CPU cores you have on your System Run this command :
+   ```bash 
+   sysctl -n hw.ncpu
+   ```
+This will be helpful for the parameter - `num_workers` in `silence_removal_parallel.py` file from audio files
 
 ## Steps to Run the Project
 
