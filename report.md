@@ -19,11 +19,14 @@ We followed a structured approach to solve the problem, including:
 ### 1. Data Preprocessing
 We first processed the raw audio data by removing silence, identifying speaker changes, and aligning the dialogues with the respective audio segments produced by the diarization process. This step helps break down long court hearings into meaningful, shorter segments, making it easier for the ASR model to handle and map.
 
-Sample of Raw Audio Before silence remoal
-![image](https://github.com/user-attachments/assets/1c821ff4-20d3-4710-a3ce-291d566e0789)
+Sample of Raw Audio Before silence removal
+
+<img src="https://github.com/user-attachments/assets/1c821ff4-20d3-4710-a3ce-291d566e0789" alt="Raw Audio Before Silence Removal" width="500"/>
 
 After silence removal
-![image](https://github.com/user-attachments/assets/2efc85d7-579a-4b90-83e9-1b4eb20a551d)
+
+<img src="https://github.com/user-attachments/assets/2efc85d7-579a-4b90-83e9-1b4eb20a551d" alt="Processed Audio After Silence Removal" width="500"/>
+
 
 
 ### 2. Speaker Diarization and Transcript Alignment
