@@ -1,5 +1,5 @@
 # ASR Fine-Tuning Project with Whisper
-Guneesh Vats | IIIT Hyderabad | guneesh.vats@research.iiit.ac.in | Github Repo Link
+Guneesh Vats | IIIT Hyderabad | guneesh.vats@research.iiit.ac.in | [Github Repo Link](https://github.com/guneeshvats/Indian-Court-Transcriptions-ASR-Model-Whisper-Fine-tuning/tree/main)
 
 
 ## Project Overview
