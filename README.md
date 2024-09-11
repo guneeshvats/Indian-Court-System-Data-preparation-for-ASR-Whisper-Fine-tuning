@@ -10,9 +10,6 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 - **report.md**: A detailed report of the project
 - **README.md**: This file.
 
-
-
-
 ## Steps to Run the Project
 
 ### 1. Data Preparation
@@ -71,22 +68,3 @@ After preparing the data, follow these steps to fine-tune the Whisper model:
 ├── README.md                   
 └── requirements.txt
 ```
-
-### Step-by-Step Process
-   
-1. **Data Preprocessing**:
-   - Silence is removed from raw audio using `prepare_dataset.py`.
-   - Speaker diarization is performed with `diarization.py`, which splits the audio by speaker and outputs aligned JSON files.
-
-2. **Transcript Alignment**:
-   - Transcripts are aligned with the diarized audio segments using `diarization.py`, generating JSON files with speaker dialogue and timestamps.
-
-3. **Dataset Preparation**:
-   - `prepare_dataset.py` splits the original audio based on diarization segments and prepares the dataset for ASR fine-tuning, ensuring each audio segment is paired with a transcript.
-
-4. **Fine-tuning Whisper**:
-   - The `fine_tune_whisper.py` script fine-tunes the pre-trained Whisper model using the prepared dataset, adjusting hyperparameters like batch size and learning rate.
-
-5. **Evaluation**:
-   - The fine-tuned model is evaluated using Word Error Rate (WER) in `fine_tune_whisper.py`, with results saved to `output/evaluation.json`.
-
