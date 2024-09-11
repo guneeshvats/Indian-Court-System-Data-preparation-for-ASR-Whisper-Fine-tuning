@@ -1,4 +1,6 @@
 # ASR Fine-Tuning Project with Whisper
+Guneesh Vats | IIIT Hyderabad | guneesh.vats@research.iiit.ac.in | Github Repo Link
+
 
 ## Project Overview
 This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hearing transcription data. The data is preprocessed to align audio segments with their respective dialogues and speaker diarization. The Whisper model is then fine-tuned to improve its transcription accuracy on the court hearing data.
