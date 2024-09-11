@@ -19,10 +19,21 @@ We followed a structured approach to solve the problem, including:
 ### 1. Data Preprocessing
 We first processed the raw audio data by removing silence, identifying speaker changes, and aligning the dialogues with the respective audio segments produced by the diarization process. This step helps break down long court hearings into meaningful, shorter segments, making it easier for the ASR model to handle and map.
 
+Sample of Raw Audio Before silence remoal
+![image](https://github.com/user-attachments/assets/1c821ff4-20d3-4710-a3ce-291d566e0789)
+
+After silence removal
+![image](https://github.com/user-attachments/assets/2efc85d7-579a-4b90-83e9-1b4eb20a551d)
+
+
 ### 2. Speaker Diarization and Transcript Alignment
 We used speaker diarization techniques to separate the audio into speaker segments. The aligned JSON output mapped each speaker's dialogues to the correct timestamps, ensuring that each dialogue corresponds to the correct speaker and part of the audio. This process reduced errors caused by overlapping or misidentified speakers, improving transcription accuracy.
 
+Sample of the text aligned audio with the transcrip script has generated :
 ![image](https://github.com/user-attachments/assets/73b439b0-1148-4716-b4da-8bbe224b58d0)
+
+Sample of Diarized file output: 
+![image](https://github.com/user-attachments/assets/85dc0002-7804-47ee-a4de-6336f49bdd1b)
 
 
 ### 3. Forced Alignment (Consideration)
