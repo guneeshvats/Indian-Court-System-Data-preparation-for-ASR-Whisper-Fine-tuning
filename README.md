@@ -21,20 +21,24 @@ This will be helpful for the parameter - `num_workers` in `silence_removal_paral
 
 ### 1. Data Preparation
 We started by preparing the dataset given to us in `dataset.csv` file:
-- Remove silence from audio files.
-- Perform speaker diarization using `Pyannote.audio` model. You would need to use your hugging face token for this file for a gated model from pyannote. 
-- Align the speaker diarization with the corresponding transcripts and generate the json files for each pair of transcript and audio files. All those json files are stored in `data/text_aligned_json_files`
-- Split the original audio based on the aligned segments.
+- Download the audio files and pdf transcripts given through the links in the csv file.
+- Run the `mp3_to_wav.py` file to convert the extension from `.mp3` to `.wav`
+- To remove silence from audio files run the - `remove_silence.py` file
+- Perform speaker diarization using `Pyannote.audio` model from the `diarization.py` file. You would need to use your hugging face token for this file for a gated model from hugging face and also download the model using the follwing commands in your terminal. 
+Download the Diarization model
+   ```bash
+   huggingface-cli download pyannote/speaker-diarization
+   huggingface-cli download pyannote/segmentation
+- Align the speaker diarization with the corresponding transcripts and generate the json files for each pair of transcript and audio files using the file in the scripts folder - `Alignment.py`. All those json files will be stored in `data/text_aligned_json_files`
+- Split the original audio based on the aligned segments using the file - `Data_prep_for_ASR.py`. 
 
 ### 2. Fine-tune Whisper Model
 After preparing the data, follow these steps to fine-tune the Whisper model:
 1. Install the necessary libraries:
    ```bash
    pip install transformers datasets torchaudio librosa
-2. Download the Diarization model
-   ```bash
-   huggingface-cli download pyannote/speaker-diarization
-   huggingface-cli download pyannote/segmentation
+2. Run the file - `fine_tune_whisper.py`
+
 
 ## Folder Structure 
 ```ASR_Fine_Tuning_Project/
@@ -56,6 +60,7 @@ After preparing the data, follow these steps to fine-tune the Whisper model:
 │   ├── remove_silence_parallel.py
 |   ├── diarization.py 
 |   ├── Alignment.py
+|   ├── Data_prep_for_ASR.py
 │   └── fine_tune_whisper.py
 ├── output/                     
 │   └── evaluation.json         
