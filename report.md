@@ -3,7 +3,9 @@ Guneesh Vats | IIIT Hyderabad | guneesh.vats@research.iiit.ac.in | [Github Repo 
 
 
 ## Introduction
-This project aims to fine-tune a pre-trained Automatic Speech Recognition (ASR) model, specifically OpenAI's Whisper model, using data from Supreme Court Hearing Transcriptions. The key goal is to prepare the dataset, align it from the given raw audio files and PDF transcripts, and improve the model's performance on transcribing legal proceedings accurately.
+In an era where automatic speech recognition (ASR) technology is becoming increasingly critical across various industries, accurately transcribing complex, real-world dialogues such as legal proceedings remains a significant challenge. This project aims to harness the power of OpenAI's Whisper model—a state-of-the-art ASR system designed to handle noisy, multilingual audio environments—to tackle the nuanced task of transcribing Supreme Court Hearing Transcriptions.
+
+Courtroom hearings are unique in their complexity, involving multiple speakers, overlapping conversations, and domain-specific language. By fine-tuning the Whisper model on this specialized dataset, we aim to not only enhance transcription accuracy but also streamline the process of handling long, segmented, and speaker-dependent audio. The end goal is to deliver a robust transcription pipeline that can effectively capture every word spoken during legal proceedings, ensuring precision in a highly formal domain where accuracy is paramount.
 
 ---
 
