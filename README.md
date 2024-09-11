@@ -31,7 +31,9 @@ After preparing the data, follow these steps to fine-tune the Whisper model:
 ├── data/                       
 │   ├── audio/                  
 │   ├── transcripts/            
-│   ├── dataset.csv             
+│   ├── dataset.csv
+|   ├── text_aligned.json
+|   ├── Diarized_Files/                                        
 ├── models/                     
 │   └── whisper/                
 │       ├── config.json         
