@@ -10,6 +10,10 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 - **report.md**: A detailed report of the project.
 - **README.md**: This file.
 
+- To check how many CPU cores you have on your System Run this command :
+```sysctl -n hw.ncpu
+```
+
 ## Steps to Run the Project
 
 ### 1. Data Preparation
