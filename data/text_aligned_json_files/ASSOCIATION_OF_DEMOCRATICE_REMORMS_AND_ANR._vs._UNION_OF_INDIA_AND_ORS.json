@@ -1,0 +1,324 @@
+[
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Justice Jeremy Johnson for visiting the 2 Supreme Court. So, on behalf of the members of the Bar and all my colleagues, I have pleasure 3 in welcoming them to our Court.",
+        "start_time": 0.031,
+        "end_time": 10.443000000000001
+    },
+    {
+        "diarized_speaker": "SPEAKER_02",
+        "real_speaker": "TUSHAR MEHTA",
+        "transcript": "We welcome Your Lordships and Your Ladyship.",
+        "start_time": 10.358,
+        "end_time": 28.482
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "This is an application which has been moved by the Election Commission 8 of India My Lord. This for a minor modification. My Lords had directed the data which was 9 submitted before this honourable Court by two Orders in the sealed envelope. The impression 10 perhaps was that one of the copies of that data is with Commission. But ...",
+        "start_time": 28.482,
+        "end_time": 31.974999999999998
+    },
+    {
+        "diarized_speaker": "SPEAKER_02",
+        "real_speaker": "TUSHAR MEHTA",
+        "transcript": "We assume that you would have retained a 13 copy of what you have submitted in the Court.",
+        "start_time": 31.975,
+        "end_time": 40.480000000000004
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "It was supposed to be in sealed cover, taking the information from the 16 political party, so we just submitted it as it is we got. So, the entire data is with this Honourable 17 Court.",
+        "start_time": 40.48,
+        "end_time": 105.482
+    },
+    {
+        "diarized_speaker": "SPEAKER_02",
+        "real_speaker": "TUSHAR MEHTA",
+        "transcript": "So, what we could do is, we will ask our office 20 to scan and digitize the data which has been submitted to us. That might just take a day or so, 21 I think because they start doing it immediately.",
+        "start_time": 42.016,
+        "end_time": 42.303
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "That can be postponed, their putting it up on the website.",
+        "start_time": 67.615,
+        "end_time": 68.476
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "As soon as the data which is available with us 26 is scanned and digitized, that will be handed over to the... the originals will be returned to the 27 Election Commission. They will immediately upload it.",
+        "start_time": 68.476,
+        "end_time": 69.472
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Fair enough. No objection.",
+        "start_time": 70.737,
+        "end_time": 72.39099999999999
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Your Lordships indicated also on the last occasion.",
+        "start_time": 105.483,
+        "end_time": 116.03
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "Now, just one thing. Who's appearing for the 34 State Bank of India? Because in our judgment, we had directed, disclosure specifically of all 35 details of the Bonds, including the purchaser, the amount and the date of purchase. They have Transcribed by TERES",
+        "start_time": 115.658,
+        "end_time": 118.982
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Your Lordships' judgment is quite clear on that, all details.",
+        "start_time": 118.983,
+        "end_time": 125.56400000000001
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "So, all details have to be furnished by the State 7 Bank of India.",
+        "start_time": 124.737,
+        "end_time": 128.028
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "And for the Government.",
+        "start_time": 126.678,
+        "end_time": 126.695
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "And they had said in their own application that they have the 12 Bond numbers, et cetera. But they have said that they were in two different silos.",
+        "start_time": 127.538,
+        "end_time": 284.948
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "That's right.",
+        "start_time": 128.669,
+        "end_time": 128.99
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "The SBI's request for extension was on the ground.",
+        "start_time": 283.48,
+        "end_time": 285.69100000000003
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "SBI is not a party. They were here because they moved an application.",
+        "start_time": 285.691,
+        "end_time": 288.155
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "Anyway, if they disclose the Bond number, we have no problems at all.",
+        "start_time": 287.345,
+        "end_time": 290.028
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Lordships may issue notice to SBI, My Lords.",
+        "start_time": 290.028,
+        "end_time": 423.999
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "My Lord, may I mention My Lord...",
+        "start_time": 304.355,
+        "end_time": 306.009
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "Lordships may issue notice to SBI, My Lords.",
+        "start_time": 308.033,
+        "end_time": 311.509
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "No, no, no. Don't.",
+        "start_time": 360.785,
+        "end_time": 362.86100000000005
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "I am requesting the Honourable Court.",
+        "start_time": 365.29,
+        "end_time": 365.72900000000004
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "An application has been filed by the Election 33 Commission of India seeking further directions. In the order of this Court, dated 11th of March, 34 2024, this Court had directed that Election Commission of India, that ECI shall upload on its 35 website the data which was furnished to this Court and which was being maintained in the 36 custody of this Court. While issuing this direction, the Court had presumed that a copy of the 37 data which was lodged before this Court, before the registry of this Court would be available Transcribed by TERES",
+        "start_time": 392.206,
+        "end_time": 395.125
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "8 9 1) The Registrar Judicial of this Court shall ensure that the data which was been filed by ECI 10 in pursuance of the interim orders of this Court is scanned and digitized. Upon the process",
+        "start_time": 398.973,
+        "end_time": 400.171
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "00 p.m. tomorrow. 12 2) Once the above exercise is completed, the original shall be returned to Mr. Amit Sharma, 13 Learned Counsel appearing on behalf of the ECI. ECI shall then upload the data on its website 14 within a period of, on or before day after.",
+        "start_time": 401.791,
+        "end_time": 403.023
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "A copy of the digitized may also be given, so it will not take time.",
+        "start_time": 422.817,
+        "end_time": 426.023
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Yes. Fair enough. A copy of the scanned and 19 digitized files shall also be made available to Mr. Amit Sharma. so as to update replication of 20 the process of scanning and digitization. So, now we'll pass another order.",
+        "start_time": 426.023,
+        "end_time": 476.51300000000003
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "Would Your Lordships consider issuing notice to SBI? They may have 23 something to say.",
+        "start_time": 448.4,
+        "end_time": 449.49699999999996
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "They should be here when the matter is going 26 on.",
+        "start_time": 466.405,
+        "end_time": 467.08
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "I'm sorry My Lords. Please. They filed an application which is disposed 29 of, they are not parties.",
+        "start_time": 476.513,
+        "end_time": 481.609
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "But really speaking we can take exception to 32 what they have disclosed because they were bound, duty bound...",
+        "start_time": 485.086,
+        "end_time": 492.579
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "I'm not appearing for SBI.",
+        "start_time": 485.137,
+        "end_time": 485.171
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "The Court can pass an order. 37 Transcribed by TERES",
+        "start_time": 489.035,
+        "end_time": 489.67600000000004
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "I'm not here for politics.",
+        "start_time": 489.355,
+        "end_time": 489.473
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "What is the operative direction in Clause ...?",
+        "start_time": 492.578,
+        "end_time": 498.78799999999995
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "My Lord, may I mention, My Lord.",
+        "start_time": 497.168,
+        "end_time": 497.48900000000003
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "ECI shall submit details of the Electoral Bonds purchased since the 8 [UNCLEAR] of the court 12th February till date to the ECI. The details shall include the date 9 of the purchase of each Electoral Bond, the name of the purchaser of the Bond and the 10 denomination of the Electoral Bond purchased. Shall include, doesn't mean it will exclude SBI.",
+        "start_time": 498.181,
+        "end_time": 508.39
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "Your Lordship order is clear. What Your Lordship meant...",
+        "start_time": 505.589,
+        "end_time": 506.939
+    },
+    {
+        "diarized_speaker": "SPEAKER_03",
+        "real_speaker": "KAPIL SIBAL",
+        "transcript": "Allow me. Allow me, sir. Allow me. SBI shall submit the details of political 15 parties, which have received contributions through Electoral Bonds since the interim order of 16 the Court dated 12th April, till the date of the ECI. SBI must disclose details of each Electoral 17 Bond encashed by political parties, which shall include the date of the encashment and the 18 denomination of the bonds. So, this is an inclusive order. It shall include all details.",
+        "start_time": 507.867,
+        "end_time": 518.886
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "Would Your Lordships see B and C.",
+        "start_time": 510.618,
+        "end_time": 511.901
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "And Your Lordship has said that the reason...",
+        "start_time": 512.997,
+        "end_time": 513.453
+    },
+    {
+        "diarized_speaker": "SPEAKER_00",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "B and C of Your Lordship is original. I'm not appearing. I am assisting. 25 I feel SBI needs to be...",
+        "start_time": 515.022,
+        "end_time": 515.359
+    },
+    {
+        "diarized_speaker": "SPEAKER_01",
+        "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
+        "transcript": "The order of this Court, the judgment of the 28 Constitution Bench required SBI to furnish to ECI, all details of the Electoral Bonds purchased 29 and as the case may be redeemed by political parties, including the date of purchase, what are 30 the other...",
+        "start_time": 518.887,
+        "end_time": 526.9699999999999
+    },
+    {
+        "diarized_speaker": "SPEAKER_02",
+        "real_speaker": "TUSHAR MEHTA",
+        "transcript": "Name of purchaser, purchase which have received, sorry.",
+        "start_time": 526.97,
+        "end_time": 527.476
+    }
+]
