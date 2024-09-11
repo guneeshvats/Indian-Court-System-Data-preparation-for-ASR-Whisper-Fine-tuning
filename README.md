@@ -12,7 +12,7 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 
 ## Steps to Run the Project
 
-Working with `python - 3.12.4`
+Working with `python - 3.12.5`
 ```bash
    pip install -r requirements.txt
 ```
