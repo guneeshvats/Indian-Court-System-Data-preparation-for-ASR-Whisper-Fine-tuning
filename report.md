@@ -45,14 +45,14 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 
 ## Evaluation Results
 
-| Metric          | Value (dummy values        |
+| Metric          | Value (dummy values)        |
 |-----------------|---------------|
 | Word Error Rate | **12.3%**     |
 | Sentence Count  | 1,200         |
 | Segment Length  | 10-30 seconds |
 | Dataset Size    | 27,500 minutes|
 
-*The model achieved a WER of 12.3%, which is a strong result given the complexity of the dataset. Future improvements could further reduce this error.*
+*The model achieved a WER of x%, which is a strong result given the complexity of the dataset. Future improvements could further reduce this error.*
 
 ---
 
@@ -63,7 +63,9 @@ The project successfully fine-tuned the Whisper model to improve transcription a
 
 ## Shortcomings
 1. **Overlapping Speech**: This implementation did not fully address overlapping speech in the audio segments.
-2. **Diarization and Silence Removal**: The diarization model and silence removal process could be enhanced for greater accuracy.
+2. **Lack of Data Augmentation**: No data augmentation techniques (e.g., adding noise, pitch shifting, or speed perturbation) were applied to increase the variability in the dataset. This could have helped improve the robustness of the model in noisy environments, which are common in real-world scenarios.
+3. **No Force Alignment for word level accuracy**: The lack of forced alignment might result in slight mismatches between the actual spoken words and their corresponding timestamps. Forced alignment could have improved word-level accuracy, especially in longer segments.
+4. **Diarization and Silence Removal**: The diarization model and silence removal process could be enhanced for greater accuracy.
 
 ---
 
