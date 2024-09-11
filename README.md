@@ -11,11 +11,7 @@ This project aims to fine-tune OpenAI’s Whisper ASR model on Supreme Court hea
 - **README.md**: This file.
 
 
-To check how many CPU cores you have on your System Run this command :
-   ```bash 
-   sysctl -n hw.ncpu
-   ```
-This will be helpful for the parameter - `num_workers` in `silence_removal_parallel.py` file from scripts folder 
+
 
 ## Steps to Run the Project
 
@@ -24,6 +20,13 @@ We started by preparing the dataset given to us in `dataset.csv` file:
 - Download the audio files and pdf transcripts given through the links in the csv file.
 - Run the `mp3_to_wav.py` file to convert the extension from `.mp3` to `.wav`
 - To remove silence from audio files run the - `remove_silence.py` file
+  This is a very slow process even on GPUs so the script `remove_silence_parallel.py` parallelize this process based on the number of CPU cores 
+  you have on your system.
+  To check how many CPU cores you have on your System Run this command :
+   ```bash 
+   sysctl -n hw.ncpu
+   ```
+This will be helpful for the parameter - `num_workers` in `silence_removal_parallel.py` file from scripts folder 
 - Perform speaker diarization using `Pyannote.audio` model from the `diarization.py` file. You would need to use your hugging face token for this file for a gated model from hugging face and also download the model using the follwing commands in your terminal. 
 Download the Diarization model
    ```bash
