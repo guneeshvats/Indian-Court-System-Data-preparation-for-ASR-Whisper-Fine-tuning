@@ -45,7 +45,7 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 
 ## Evaluation Results
 
-| Metric          | Value         |
+| Metric          | Value (dummy values        |
 |-----------------|---------------|
 | Word Error Rate | **12.3%**     |
 | Sentence Count  | 1,200         |
