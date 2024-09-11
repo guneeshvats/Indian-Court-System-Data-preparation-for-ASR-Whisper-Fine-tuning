@@ -15,15 +15,15 @@ To check how many CPU cores you have on your System Run this command :
    ```bash 
    sysctl -n hw.ncpu
    ```
-This will be helpful for the parameter - `num_workers` in `silence_removal_parallel.py` file from audio files
+This will be helpful for the parameter - `num_workers` in `silence_removal_parallel.py` file from scripts folder 
 
 ## Steps to Run the Project
 
 ### 1. Data Preparation
-We started by preparing the dataset:
+We started by preparing the dataset given to us in `dataset.csv` file:
 - Remove silence from audio files.
-- Perform speaker diarization using Pyannote.audio.
-- Align the speaker diarization with the corresponding transcripts.
+- Perform speaker diarization using `Pyannote.audio` model. You would need to use your hugging face token for this file for a gated model from pyannote. 
+- Align the speaker diarization with the corresponding transcripts and generate the json files for each pair of transcript and audio files. All those json files are stored in `data/text_aligned_json_files`
 - Split the original audio based on the aligned segments.
 
 ### 2. Fine-tune Whisper Model
@@ -39,20 +39,24 @@ After preparing the data, follow these steps to fine-tune the Whisper model:
 │   ├── audio/                  
 │   ├── transcripts/            
 │   ├── dataset.csv
-|   ├── text_aligned.json
-|   ├── Diarized_Files/                                        
+|   ├── text_aligned_json_files/
+|   ├── Diarized_Files/
+|   ├── Audio_Segments_transcripts_splits/                                     
 ├── models/                     
 │   └── whisper/                
 │       ├── config.json         
 │       ├── pytorch_model.bin   
 │       └── tokenizer.json      
 ├── scripts/                    
-│   ├── diarization.py          
-│   ├── prepare_dataset.py      
-│   └── fine_tune_whisper.py    
+│   ├── mp3_to_wav.py         
+│   ├── remove_silence.py
+│   ├── remove_silence_parallel.py
+|   ├── diarization.py 
+|   ├── Alignment.py
+│   └── fine_tune_whisper.py
 ├── output/                     
 │   └── evaluation.json         
-├── report.md                   
+├── Report.md                   
 ├── README.md                   
 └── requirements.txt
 ```
