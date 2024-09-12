@@ -1,0 +1,232 @@
+[
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_0.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_0.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_1.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_1.txt",
+        "speaker": "TUSHAR MEHTA"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_2.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_2.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_3.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_3.txt",
+        "speaker": "TUSHAR MEHTA"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_4.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_4.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_5.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_5.txt",
+        "speaker": "TUSHAR MEHTA"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_6.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_6.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_7.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_7.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_8.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_8.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_9.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_9.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_10.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_10.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_11.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_11.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_12.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_12.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_13.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_13.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_14.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_14.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_15.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_15.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_16.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_16.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_17.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_17.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_18.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_18.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_19.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_19.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_20.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_20.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_21.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_21.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_22.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_22.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_23.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_23.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_24.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_24.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_25.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_25.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_26.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_26.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_27.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_27.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_28.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_28.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_29.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_29.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_30.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_30.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_31.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_31.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_32.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_32.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_33.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_33.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_34.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_34.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_35.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_35.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_36.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_36.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_37.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_37.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_38.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_38.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_39.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_39.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_40.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_40.txt",
+        "speaker": "KAPIL SIBAL"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_41.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_41.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_42.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_42.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_43.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_43.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_44.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_44.txt",
+        "speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD"
+    },
+    {
+        "audio": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_45.wav",
+        "transcript": "ASR_data/ASSOCIATION_OF_DEMOCRATICE_REMORMS_AND_ANR._vs._UNION_OF_INDIA_AND_ORS_segment_45.txt",
+        "speaker": "TUSHAR MEHTA"
+    }
+]
