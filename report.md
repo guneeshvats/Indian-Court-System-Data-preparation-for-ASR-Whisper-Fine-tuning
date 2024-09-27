@@ -81,17 +81,18 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 **We identified areas for future improvements**, such as : 
 1. Better handling of overlapping speech
 2. Enhanced diarization accuracy with a better model or maybe a custom trained on indian accented english speech.
-3. Trying more variations of hyperparameter tuning (dynamic lr, batch size, etc.) 
+3. Trying more variations of hyperparameter tuning (dynamic lr, batch size, etc.)
+4. Data Augmentation (to have more diverse dataset in order to prevent overfitting)
 
 ---
 
 ## Evaluation Results
 
-| Metric          | Value (dummy values)        | Fine tuned model  |
+| Metric (WER)          | WER (Pretrained Model)        | WER (Fine tuned model)  |
 |-----------------|---------------|---------------------------------|
-| Word Error Rate | **12.3%**     |          |
+| Value | **30-70%%**     |          |
 | Sentence Count  | 1,200         |          |
-| Segment Length  | 10-30 seconds |          |
+| Segment Length  | 3-20 seconds |          |
 | Dataset Size    | 27,500 minutes|          |
 
 *The model achieved a WER of x%, which is a strong result given the complexity of the dataset. Future improvements could further reduce this error.*
@@ -99,7 +100,7 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 ---
 
 ## Conclusion
-The project successfully fine-tuned the Whisper model to improve transcription accuracy for Supreme Court hearing data. By using speaker diarization and segment-based alignment, we reduced errors related to overlapping speech and complex dialogues. Forced alignment was deemed unnecessary as the segment-based approach was sufficient and less computationally intensive.
+The project successfully fine-tuned the Whisper model to improve transcription accuracy for Supreme Court hearing data. By levaraging pdf transcripts specific structure and speaker diarization alignment, we reduced errors related to complex dialogues. Forced alignment was deemed unnecessary as the segment-based approach was sufficient and less computationally intensive for the advanced model like whisper. 
 
 ---
 
