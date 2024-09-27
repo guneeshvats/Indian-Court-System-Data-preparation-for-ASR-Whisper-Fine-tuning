@@ -33,7 +33,7 @@ import torch
 from evaluate import load
 from datasets import Dataset
 from torch.nn.utils.rnn import pad_sequence
-from sklearn.model_selection import train_test_split  # Import for dataset splitting
+from sklearn.model_selection import train_test_split 
 
 # Custom Data Collator for Whisper to handle spectrograms (input_features)
 class CustomDataCollator:
@@ -117,9 +117,9 @@ class CustomWhisperSeq2SeqTrainer(Seq2SeqTrainer):
 # 5. Training Arguments with GPU Optimization and Checkpointing
 training_args = Seq2SeqTrainingArguments(
     output_dir="./whisper_lora_finetuned",
-    per_device_train_batch_size=2,  # Reduce batch size if you encounter memory issues
+    per_device_train_batch_size=2,  
     per_device_eval_batch_size=2,
-    gradient_accumulation_steps=4,  # Accumulate gradients to reduce memory footprint
+    gradient_accumulation_steps=4,  
     learning_rate=5e-5,
     num_train_epochs=3,
     eval_strategy="steps",
