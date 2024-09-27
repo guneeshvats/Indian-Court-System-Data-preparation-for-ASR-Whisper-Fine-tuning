@@ -1,7 +1,96 @@
+############################################################################################################################
+############################################################################################################################
+'''
+Purpose : Extract dialogues from PDF transcripts, align them with speaker diarization results from RTTM files, and create a 
+structured JSON output for each case.
+
+Steps : 
+
+1. Extract Dialogues: Reads dialogues from PDF transcripts while ignoring metadata and timestamps.
+2. Parse RTTM Files: Extracts speaker information, start time, and duration from diarization results.
+3. Align Dialogues: Maps PDF dialogues to diarized speaker segments and saves the aligned data in JSON format.
+4. Process All Files: Iterates through all RTTM and PDF files in the specified folders.
+
+Preprocessing Steps :
+1. Expand Contractions: Replaces contractions like "don't" with "do not" using `expand_contractions`.
+2. Remove Filler Words: Removes common filler words like "um" and "you know" from the dialogue using `remove_filler_words`.
+3. Spell Out Numbers: Converts numerical digits to their word equivalents using `spell_out_numbers`.
+4. Clean Speaker Names and Dialogue: Removes digits and unwanted characters from speaker names and dialogues.
+
+
+Replace Paths : 
+
+rttm_folder = "path_to_rttm_files"
+pdf_folder = "path_to_pdf_files"
+output_json_folder = "path_to_save_output_json"
+
+Code written by: Guneesh Vats
+Date: 25th Sept, 2024
+'''
+############################################################################################################################
+############################################################################################################################
+
+
 import pdfplumber
 import os
 import json
 import re
+import inflect
+
+# Initialize the inflect engine for number-to-word conversion
+inflect_engine = inflect.engine()
+
+# Dictionary for expanding contractions
+contractions_dict = {
+    "don't": "do not",
+    "can't": "cannot",
+    "won't": "will not",
+    "isn't": "is not",
+    "aren't": "are not",
+    "I'm": "I am",
+    "you're": "you are",
+    "we're": "we are",
+    "they're": "they are",
+    "it's": "it is",
+    "there's": "there is",
+    "I've": "I have",
+    "you've": "you have",
+    "we've": "we have",
+    "they've": "they have",
+    "he's": "he is",
+    "she's": "she is",
+    "that's": "that is",
+}
+
+# List of filler words to remove
+filler_words = ["um", "uh", "you know"]
+
+# Function to expand contractions
+def expand_contractions(text, contractions_dict):
+    pattern = re.compile(r'\b(' + '|'.join(contractions_dict.keys()) + r')\b')
+    return pattern.sub(lambda x: contractions_dict[x.group()], text)
+
+# Function to remove filler words
+def remove_filler_words(text, filler_words):
+    pattern = re.compile(r'\b(' + '|'.join(filler_words) + r')\b', re.IGNORECASE)
+    return pattern.sub('', text).strip()
+
+# Function to spell out numbers
+def spell_out_numbers(text):
+    return re.sub(r'\b\d+\b', lambda x: inflect_engine.number_to_words(x.group()), text)
+
+# Preprocess function that combines all the preprocessing steps
+def preprocess_text(text):
+    text = expand_contractions(text, contractions_dict)  # Expand contractions
+    text = remove_filler_words(text, filler_words)        # Remove filler words
+    text = spell_out_numbers(text)                        # Convert numbers to words
+    return text
+
+# Modified function to clean dialogue text with added preprocessing steps
+def clean_dialogue_text(dialogue):
+    dialogue = re.sub(r'\d+$', '', dialogue).strip()  # Remove digits at the end
+    dialogue = preprocess_text(dialogue)              # Apply preprocessing
+    return dialogue
 
 # Step 1: Helper function to check if a line is a valid speaker line (not a line number or timestamp)
 def is_valid_speaker_line(line):
@@ -22,12 +111,11 @@ def clean_dialogue_text(dialogue):
     # Remove any digits at the end of the dialogue
     return re.sub(r'\d+$', '', dialogue).strip()
 
-# Step 5: Extract dialogues from the PDF, ignoring timestamps and line numbers
+# Step 5: Extract dialogues from the PDF, ignoring timestamps and line numbers, and preprocess them
 def extract_dialogues_from_pdf(pdf_path):
     dialogues = []
     with pdfplumber.open(pdf_path) as pdf:
-        # Skip the first page and process from the second page onwards
-        for page in pdf.pages[1:]:
+        for page in pdf.pages[1:]:  # Skip the first page and process from the second page onwards
             text = page.extract_text()
             if text:
                 lines = text.split("\n")
@@ -35,36 +123,30 @@ def extract_dialogues_from_pdf(pdf_path):
                 current_dialogue = []
 
                 for line in lines:
-                    # Skip timestamps or metadata
                     if is_timestamp_or_metadata(line):
                         continue
 
-                    if is_valid_speaker_line(line):  # Only process lines with valid speaker names
-                        # First, save the previous speaker's dialogue (if exists)
+                    if is_valid_speaker_line(line):  
                         if current_speaker is not None:
                             full_dialogue = " ".join(current_dialogue).strip()
                             dialogues.append({
                                 "speaker": current_speaker,
-                                "dialogue": clean_dialogue_text(full_dialogue)  # Clean dialogue text
+                                "dialogue": clean_dialogue_text(full_dialogue)
                             })
 
-                        # Now, process the current speaker and dialogue
                         speaker, dialogue = line.split(":", 1)
-                        current_speaker = clean_speaker_name(speaker.strip())  # Clean speaker name
-                        current_dialogue = [dialogue.strip()]  # Start new dialogue
+                        current_speaker = clean_speaker_name(speaker.strip())  
+                        current_dialogue = [dialogue.strip()]  
                     else:
-                        # Append subsequent lines to the current dialogue (multi-line dialogues)
                         current_dialogue.append(line.strip())
 
-                # After processing all lines, append the last speaker's dialogue
                 if current_speaker and current_dialogue:
                     full_dialogue = " ".join(current_dialogue).strip()
                     dialogues.append({
                         "speaker": current_speaker,
-                        "dialogue": clean_dialogue_text(full_dialogue)  # Clean dialogue text
+                        "dialogue": clean_dialogue_text(full_dialogue)
                     })
     return dialogues
-
 # Step 6: Parse the RTTM diarization file
 def parse_rttm(rttm_path):
     speaker_segments = []
