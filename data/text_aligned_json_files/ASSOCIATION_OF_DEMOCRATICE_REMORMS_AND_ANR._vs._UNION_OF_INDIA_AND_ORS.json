@@ -2,7 +2,7 @@
     {
         "diarized_speaker": "SPEAKER_01",
         "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
-        "transcript": "Justice Jeremy Johnson for visiting the 2 Supreme Court. So, on behalf of the members of the Bar and all my colleagues, I have pleasure 3 in welcoming them to our Court.",
+        "transcript": "Justice Jeremy Johnson for visiting the 2 Supreme Court. So, on behalf of the members of the Bar and all my colleagues, I have pleasure in welcoming them to our Court.",
         "start_time": 0.031,
         "end_time": 10.443000000000001
     },
@@ -16,14 +16,14 @@
     {
         "diarized_speaker": "SPEAKER_01",
         "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
-        "transcript": "This is an application which has been moved by the Election Commission 8 of India My Lord. This for a minor modification. My Lords had directed the data which was 9 submitted before this honourable Court by two Orders in the sealed envelope. The impression 10 perhaps was that one of the copies of that data is with Commission. But ...",
+        "transcript": "This is an application which has been moved by the Election Commission of India My Lord. This for a minor modification. My Lords had directed the data which was 9 submitted before this honourable Court by two Orders in the sealed envelope. The impression 10 perhaps was that one of the copies of that data is with Commission. But ...",
         "start_time": 28.482,
         "end_time": 31.974999999999998
     },
     {
         "diarized_speaker": "SPEAKER_02",
         "real_speaker": "TUSHAR MEHTA",
-        "transcript": "We assume that you would have retained a 13 copy of what you have submitted in the Court.",
+        "transcript": "We assume that you would have retained a copy of what you have submitted in the Court.",
         "start_time": 31.975,
         "end_time": 40.480000000000004
     },
@@ -135,7 +135,7 @@
     {
         "diarized_speaker": "SPEAKER_01",
         "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
-        "transcript": "Lordships may issue notice to SBI, My Lords.",
+        "transcript": "Lordships may issue notice to SBI, My Lords...",
         "start_time": 290.028,
         "end_time": 423.999
     },
@@ -282,7 +282,7 @@
     {
         "diarized_speaker": "SPEAKER_03",
         "real_speaker": "KAPIL SIBAL",
-        "transcript": "Allow me. Allow me, sir. Allow me. SBI shall submit the details of political 15 parties, which have received contributions through Electoral Bonds since the interim order of 16 the Court dated 12th April, till the date of the ECI. SBI must disclose details of each Electoral 17 Bond encashed by political parties, which shall include the date of the encashment and the 18 denomination of the bonds. So, this is an inclusive order. It shall include all details.",
+        "transcript": "Allow me. Allow me, sir. Allow me. SBI shall submit the details of political parties, which have received contributions through Electoral Bonds since the interim order of 16 the Court dated 12th April, till the date of the ECI. SBI must disclose details of each Electoral 17 Bond encashed by political parties, which shall include the date of the encashment and the 18 denomination of the bonds. So, this is an inclusive order. It shall include all details.",
         "start_time": 507.867,
         "end_time": 518.886
     },
@@ -303,7 +303,7 @@
     {
         "diarized_speaker": "SPEAKER_00",
         "real_speaker": "CHIEF JUSTICE D. Y. CHANDRACHUD",
-        "transcript": "B and C of Your Lordship is original. I'm not appearing. I am assisting. 25 I feel SBI needs to be...",
+        "transcript": "B and C of Your Lordship is original. I'm not appearing. I am assisting. I feel SBI needs to be...",
         "start_time": 515.022,
         "end_time": 515.359
     },
