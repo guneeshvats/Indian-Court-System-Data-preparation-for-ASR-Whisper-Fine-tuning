@@ -33,6 +33,7 @@ import torch
 from evaluate import load
 from datasets import Dataset
 from torch.nn.utils.rnn import pad_sequence
+from sklearn.model_selection import train_test_split  # Import for dataset splitting
 
 # Custom Data Collator for Whisper to handle spectrograms (input_features)
 class CustomDataCollator:
@@ -88,8 +89,18 @@ for audio_file, transcript_file in zip(audio_files, transcript_files):
     labels = processor.tokenizer(transcript, return_tensors="pt").input_ids.squeeze(0)
     data.append({"input_features": input_features.numpy().tolist(), "labels": labels.numpy().tolist()})
 
-train_dataset = Dataset.from_dict({"input_features": [x["input_features"] for x in data], "labels": [x["labels"] for x in data]})
-eval_dataset = train_dataset
+# Convert to Dataset object
+full_dataset = Dataset.from_dict({"input_features": [x["input_features"] for x in data], "labels": [x["labels"] for x in data]})
+
+# Split the dataset into train and validation sets (e.g., 80% train, 20% validation)
+train_val_split = full_dataset.train_test_split(test_size=0.2, seed=42)  # Split 80-20 for train and validation
+train_dataset = train_val_split["train"]
+eval_dataset = train_val_split["test"]
+
+# Further split the eval_dataset into validation and test sets (e.g., 10% of total data each)
+eval_test_split = eval_dataset.train_test_split(test_size=0.5, seed=42)  # Split 50-50 to get validation and test datasets
+eval_dataset = eval_test_split["train"]  # 10% of total data for validation
+test_dataset = eval_test_split["test"]   # 10% of total data for final testing (wer)
 
 # 4. Define Data Collator
 data_collator = CustomDataCollator(processor=processor)
@@ -140,7 +151,7 @@ trainer = CustomWhisperSeq2SeqTrainer(
     model=model,
     args=training_args,
     train_dataset=train_dataset,
-    eval_dataset=eval_dataset,
+    eval_dataset=eval_dataset,  # Use eval_dataset for validation during training
     tokenizer=processor.feature_extractor,
     data_collator=data_collator,
     compute_metrics=compute_metrics
@@ -149,8 +160,8 @@ trainer = CustomWhisperSeq2SeqTrainer(
 # 8. Start Training and Save Checkpoints
 trainer.train()
 
-# 9. Evaluate the Model
-eval_results = trainer.evaluate(eval_dataset=eval_dataset)
+# 9. Evaluate the Model on Test Dataset
+eval_results = trainer.evaluate(eval_dataset=test_dataset)  # Evaluate on the test dataset
 
-# 10. Print WER
-print(f"Word Error Rate (WER): {eval_results['eval_wer']}")
+# 10. Print Final Test WER
+print(f"Final Test Word Error Rate (WER): {eval_results['eval_wer']}")
