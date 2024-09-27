@@ -38,15 +38,7 @@ We first processed the raw audio data by removing silence, removing background n
 
 Sample of Raw Audio Before and after silence & noise removal
 
-<img src="https://github.com/user-attachments/assets/1c821ff4-20d3-4710-a3ce-291d566e0789" alt="Raw Audio Before Silence Removal" width="500"/>
-
-After silence removal
-
-<img src="https://github.com/user-attachments/assets/2efc85d7-579a-4b90-83e9-1b4eb20a551d" alt="Processed Audio After Silence Removal" width="500"/>
-
-
-
-<img src="https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9" alt="image" width="200"/>
+<img src="https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9" alt="image" width="500"/>
 
 
 
