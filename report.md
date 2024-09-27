@@ -13,11 +13,15 @@ Courtroom hearings are unique in their complexity, involving multiple speakers, 
 We followed a structured approach to solve the problem, including:
 0. **Data Accumulation**: Downloaded the transcripts and correspondind court hearing in `.mp3` from teh given `dataset.csv` file and converted them to `.wav` 
 1. **Data Preprocessing**: Removing silence, background noise from the audio and normalized it.
-2. **Speaker Diarization**: Speaker diarization of processed audio files and created `.rttm` files.
-3. **Data Preparation 1**: Created Alignment json files for each dialogue in transcript of each case paired up with the start and end time of that part in audio file along with the speaker name, using the pdf files and rttm files. Also did the major portion of transcript cleaning in this part. 
-4. **Data Preparation 2**: Segmented the audio files with this json information and created `.txt` files and `.wav` files for each dialogue.
-5. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance. 
-6. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
+2. 
+3. **Speaker Diarization**: Speaker diarization of processed audio files and created `.rttm` files.
+4. 
+5. **Data Preparation 1**: Created Alignment json files for each dialogue in transcript of each case paired up with the start and end time of that part in audio file along with the speaker name, using the pdf files and rttm files. Also did the major portion of transcript cleaning in this part.
+6. 
+7. **Data Preparation 2**: Segmented the audio files with this json information and created `.txt` files and `.wav` files for each dialogue.
+8. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance.
+9. 
+10. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
 
 <img src="https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c" width=500/>
 
@@ -56,11 +60,16 @@ How does a diarization model works :
 1. There are two main approaches to speaker diarization: bottom-up and top-down. Bottom-up approaches first segment the audio signal into short windows, then cluster these short segments according to similarity before finally assigning labels to the clusters. Top-down approaches first assign labels to short segments, then cluster the labeled segments before finally merging them into longer speech turns.
 
 2. Both bottom-up and top-down approaches have their strengths and weaknesses, and which one is better depends on the specific application. In general, however, bottom-up approaches tend to be more accurate while top-down approaches tend to be faster.
-
-3. Diarization systems typically use a Gaussian Mixture Model (GMM) to model the distribution of MFCCs for each speaker. The GMM is trained on a set of labeled data, then used to predict the speaker ID for new utterances.
-
-4. Some diarization systems also use i-vectors, which are low-dimensional representations of short-term spectral information. I-vectors can be extracted from an audio signal using Principal Component Analysis (PCA).
 ```
+Advantages of choosing Pyannote/diarization model : 
+```
+1. Comes with a set of available pre-trained models for the VAD, embedder and segmentation model.
+2. The inference pipeline can identify multiple speakers speaking at the same time (multi-label diarization).
+
+3.Especially when the number of speakers are unknown before running the clustering algorithm. 
+```
+
+
 Challenges of diarization models : 
 
 ```
