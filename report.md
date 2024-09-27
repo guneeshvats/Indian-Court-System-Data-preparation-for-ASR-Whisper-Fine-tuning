@@ -20,9 +20,8 @@ We followed a structured approach to solve the problem, including:
 6. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
 
 
-
 ![image](https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c)
-
+<img src="https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c" width=500/>
 
 ---
 
