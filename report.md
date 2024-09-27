@@ -21,6 +21,7 @@ We followed a structured approach to solve the problem, including:
 
 <img src="https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c" width=500/>
 
+Credit : Research Gate
 ---
 
 ## Steps to Solve the Problem
@@ -32,8 +33,10 @@ Then used the `mp3_to_wav.py` file which uses essentially `ffmpeg` to convert th
 
 ### 1. Data Preprocessing
 We first processed the raw audio data by removing silence, removing background noise using LPF and HPF withing a certain threshold to get rid of very lowe freq and very high pitched noises fer the audio files so that we can use them for the diarization process.
+This was done using the script in file `silence_removal_parallel.py`
+To make the process faster I parallelzied the processing of multiple files based on the CPU cores availaible on the system. Detailes instructions are there in the `readme.md` and `top comment` of the script. 
 
-Sample of Raw Audio Before and after silence & noise removal
+Sample of Raw Audio Before and after silence & noise removal : 
 
 <img src="https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9" alt="image" width="500"/>
 
