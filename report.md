@@ -14,7 +14,7 @@ We followed a structured approach to solve the problem, including:
 0. **Data Accumulation**: Downloaded the transcripts and correspondind court hearing in `.mp3` from teh given `dataset.csv` file and converted them to `.wav` 
 1. **Data Preprocessing**: Removing silence, background noise from the audio and normalized it.
 2. **Speaker Diarization**: Speaker diarization of processed audio files and created `.rttm` files.
-3. **Data Preparation 1**: Created json files for each dialogue in transcript paired up with the start and end time of that part in audio file along with the speaker name.
+3. **Data Preparation 1**: Created Alignment json files for each dialogue in transcript of each case paired up with the start and end time of that part in audio file along with the speaker name, using the pdf files and rttm files. Also did the major portion of transcript cleaning in this part. 
 4. **Data Preparation 2**: Segmented the audio files with this json information and created `.txt` files and `.wav` files for each dialogue.
 5. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance. 
 6. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
