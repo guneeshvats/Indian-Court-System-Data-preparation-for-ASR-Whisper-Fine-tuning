@@ -53,14 +53,20 @@ Sample of Diarized file output:
 ![image](https://github.com/user-attachments/assets/85dc0002-7804-47ee-a4de-6336f49bdd1b)
 
 
-### 3. Forced Alignment (Consideration)
+### 3.1 Forced Alignment (Consideration)
 While forced alignment (aligning every word in the transcript with its exact timestamp in the audio) could provide more granular alignment, it was not necessary for our task. Segment-level alignment suffices for ASR fine-tuning, and forced alignment would have added unnecessary complexity without significant benefits.
 
-### 4. Data Preparation for ASR Fine-tuning
-After processing the audio files based on the diarization JSON, we split the original audio into segments. These segments were formatted into the standard ASR format, with each segment paired with its corresponding transcript. This step was essential for making the dataset compatible with the Whisper model.
+### 4. Data Preparation 2 for ASR Fine-tuning
+Using the `.json` file and the processed audio files, we split these into segments defined in the json file. These segments were formatted into the standard ASR format, with each segment paired with its corresponding transcript in a `.txt` file for each dialogue of each case. This step was essential for making the dataset compatible with the Whisper model because now each segment is less than 30s which makes the mel spectogram more meaningful. 
 
 ### 5. Fine-tuning Whisper Model
 We fine-tuned the pre-trained Whisper model using Hugging Face’s `transformers` library. Whisper was selected because of its state-of-the-art performance, particularly in multilingual and noisy environments, making it ideal for the legal domain.
+In this 
+
+This fine-tuning code is designed to customize the pre-trained Whisper model on a custom audio-transcription dataset. It involves several steps: loading the Whisper model and processor, preparing the data, defining custom configurations using Low-Rank Adaptation (LoRA), and training the model. The data preparation phase reads audio files (in .wav format) and their corresponding text transcripts (in .txt format) from the specified directories. Each audio file is converted into a Log-Mel spectrogram with shape (num_frames, num_mel_bins), where num_frames is the length of the audio in frames, and num_mel_bins is the number of Mel frequency bands used. The text transcripts are tokenized into a sequence of token IDs, resulting in a 1D tensor (sequence_length).
+
+These processed input features and labels are combined into a Dataset object, which is then split into separate training, validation, and test datasets using an 80-10-10 split strategy. During training, the model receives batches of spectrograms and tokenized labels, with shapes adjusted by the custom data collator to ensure uniformity (e.g., padded to a consistent size). The fine-tuning process focuses on updating a few targeted layers specified by LoRA while keeping most of the model frozen to maintain computational efficiency. The model's performance is monitored using the Word Error Rate (WER) metric, calculated on the validation and test datasets. This approach enables efficient fine-tuning of the Whisper model with minimal data and computational resources while preserving its language and speech recognition capabilities.
+
 
 - **Why Whisper?**: Whisper's architecture handles long audio segments and multilingual transcripts, making it a strong candidate for court hearings.
 
