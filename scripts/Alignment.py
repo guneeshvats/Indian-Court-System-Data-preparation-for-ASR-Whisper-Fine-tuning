@@ -6,7 +6,7 @@ structured JSON output for each case.
 
 Steps : 
 
-1. Extract Dialogues: Reads dialogues from PDF transcripts while ignoring metadata and timestamps.
+1. Extract Dialogues: Reads dialogues from PDF transcripts while ignoring metadata and timestamps and other preprocessing steps.
 2. Parse RTTM Files: Extracts speaker information, start time, and duration from diarization results.
 3. Align Dialogues: Maps PDF dialogues to diarized speaker segments and saves the aligned data in JSON format.
 4. Process All Files: Iterates through all RTTM and PDF files in the specified folders.
@@ -37,7 +37,7 @@ import json
 import re
 import inflect
 
-# Initialize the inflect engine for number-to-word conversion
+# Initializing the inflect engine for number-to-word conversion
 inflect_engine = inflect.engine()
 
 # Dictionary for expanding contractions
@@ -106,11 +106,6 @@ def is_timestamp_or_metadata(line):
 def clean_speaker_name(speaker):
     return re.sub(r'\d+', '', speaker).strip()
 
-# Step 4: Helper function to remove trailing numbers from dialogue text
-def clean_dialogue_text(dialogue):
-    # Remove any digits at the end of the dialogue
-    return re.sub(r'\d+$', '', dialogue).strip()
-
 # Step 5: Extract dialogues from the PDF, ignoring timestamps and line numbers, and preprocess them
 def extract_dialogues_from_pdf(pdf_path):
     dialogues = []
@@ -123,9 +118,11 @@ def extract_dialogues_from_pdf(pdf_path):
                 current_dialogue = []
 
                 for line in lines:
+                    # only for the first line of the page
                     if is_timestamp_or_metadata(line):
                         continue
-
+                    
+                    # Next speaker has begun
                     if is_valid_speaker_line(line):  
                         if current_speaker is not None:
                             full_dialogue = " ".join(current_dialogue).strip()
@@ -137,6 +134,8 @@ def extract_dialogues_from_pdf(pdf_path):
                         speaker, dialogue = line.split(":", 1)
                         current_speaker = clean_speaker_name(speaker.strip())  
                         current_dialogue = [dialogue.strip()]  
+
+                    # else add to the previous speaker 
                     else:
                         current_dialogue.append(line.strip())
 
@@ -159,7 +158,7 @@ def parse_rttm(rttm_path):
             speaker_segments.append({
                 "start_time": start_time,
                 "end_time": start_time + duration,
-                "speaker": speaker  # "Speaker 0", "Speaker 1", etc.
+                "speaker": speaker 
             })
     return speaker_segments
 
@@ -198,7 +197,7 @@ def align_dialogues_with_diarization(diarization_path, pdf_path, output_json_pat
                 "start_time": start_time,
                 "end_time": end_time
             })
-            dialogue_index += 1  # Move to the next dialogue
+            dialogue_index += 1  
 
     # Save the aligned data to JSON
     with open(output_json_path, "w") as output_file:
@@ -213,7 +212,7 @@ def process_all_files(rttm_folder, pdf_folder, output_json_folder):
     # Iterate through all the RTTM files in the folder
     for rttm_file in os.listdir(rttm_folder):
         if rttm_file.endswith(".rttm"):
-            case_name = rttm_file.replace(".rttm", "")  # Extract the base name (e.g., 'case_1')
+            case_name = rttm_file.replace(".rttm", "")  # Extract the base name
             rttm_path = os.path.join(rttm_folder, rttm_file)
             pdf_path = os.path.join(pdf_folder, case_name + ".pdf")
 
@@ -225,8 +224,9 @@ def process_all_files(rttm_folder, pdf_folder, output_json_folder):
             else:
                 print(f"Warning: PDF for {case_name} not found!")
 
-rttm_folder = 'output_diarization_folder'  # Folder containing RTTM files
-pdf_folder = 'pdf_transcripts'    # Folder containing PDF transcripts
-output_json_folder = 'final_output_json'  # Folder where aligned JSONs will be saved
+rttm_folder = 'output_diarization_folder'  
+pdf_folder = 'pdf_transcripts'    
+output_json_folder = 'final_output_json'  
 
 process_all_files(rttm_folder, pdf_folder, output_json_folder)
+print("All files processed and aligned!")
