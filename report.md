@@ -11,20 +11,22 @@ Courtroom hearings are unique in their complexity, involving multiple speakers, 
 
 ## Approach Overview
 We followed a structured approach to solve the problem, including:
-0. **Data Accumulation**: Downloaded the transcripts and correspondind court hearing in `.mp3` and converted them to `.wav`
+0. **Data Accumulation**: Downloaded the transcripts and correspondind court hearing in `.mp3` from teh given `dataset.csv` file and converted them to `.wav` 
 1. **Data Preprocessing**: Removing silence, background noise from the audio and normalized it.
 2. **Speaker Diarization**: Speaker diarization of processed audio files and created `.rttm` files.
-3. **Data Preparation**: Created json files for each dialogue in transcript paired up with the start and end time of that part in audio file along with the speaker name.
+3. **Data Preparation 1**: Created json files for each dialogue in transcript paired up with the start and end time of that part in audio file along with the speaker name.
 4. **Data Preparation 2**: Segmented the audio files with this json information and created `.txt` files and `.wav` files for each dialogue.
 5. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance. 
-6. **Fine-tuning Whisper**: Extracted features, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
+6. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
 
 ---
 
 ## Steps to Solve the Problem
+### 0. Data Accumulation
+
 
 ### 1. Data Preprocessing
-We first processed the raw audio data by removing silence, identifying speaker changes, and aligning the dialogues with the respective audio segments produced by the diarization process. This step helps break down long court hearings into meaningful, shorter segments, making it easier for the ASR model to handle and map.
+We first processed the raw audio data by removing silence, and aligning the dialogues with the respective audio segments produced by the diarization process. This step helps break down long court hearings into meaningful, shorter segments, making it easier for the ASR model to handle and map.
 
 Sample of Raw Audio Before silence removal
 
