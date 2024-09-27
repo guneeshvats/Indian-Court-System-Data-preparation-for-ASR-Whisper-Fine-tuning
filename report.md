@@ -19,8 +19,6 @@ We followed a structured approach to solve the problem, including:
 5. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance. 
 6. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
 
-
-![image](https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c)
 <img src="https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c" width=500/>
 
 ---
@@ -108,7 +106,7 @@ The project successfully fine-tuned the Whisper model to improve transcription a
 
 ---
 
-## Shortcomings
+## Shortcomings & Future Directions 
 1. **Overlapping Speech**: This implementation did not fully address overlapping speech in the audio segments.
 2. **Lack of Data Augmentation**: No data augmentation techniques (e.g., adding noise, pitch shifting, or speed perturbation) were applied to increase the variability in the dataset. This could have helped improve the robustness of the model in noisy environments, which are common in real-world scenarios and to prevent overfitting. 
 3. **No Force Alignment for word level accuracy**: The lack of forced alignment might result in mismatches between the actual spoken words and their corresponding timestamps. Forced alignment could have improved word-level accuracy, especially in longer segments. Since are completely dependent on diarization model and 
