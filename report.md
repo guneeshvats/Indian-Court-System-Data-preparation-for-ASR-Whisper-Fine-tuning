@@ -45,9 +45,26 @@ Sample of Raw Audio Before and after silence & noise removal :
 
 
 ### 2. Speaker Diarization
-We used speaker diarization techniques to separate the audio into speaker segments. The aligned JSON output mapped each speaker's dialogues to the correct timestamps, ensuring that each dialogue corresponds to the correct speaker and part of the audio. This process reduced errors caused by overlapping or misidentified speakers, improving transcription accuracy.
+We used speaker diarization model from hugging face to separate the audio into speaker segments using the `diarization.py` script.
+we have used `pyyanote/speaker-diarization` model from `hugging face`. For this script you need to have an access token adn login to the hugging face account because this is a gated model. 
+```
+How does a diarization model works :
 
+There are two main approaches to speaker diarization: bottom-up and top-down. Bottom-up approaches first segment the audio signal into short windows, then cluster these short segments according to similarity before finally assigning labels to the clusters. Top-down approaches first assign labels to short segments, then cluster the labeled segments before finally merging them into longer speech turns.
 
+Both bottom-up and top-down approaches have their strengths and weaknesses, and which one is better depends on the specific application. In general, however, bottom-up approaches tend to be more accurate while top-down approaches tend to be faster.
+
+Diarization systems typically use a Gaussian Mixture Model (GMM) to model the distribution of MFCCs for each speaker. The GMM is trained on a set of labeled data, then used to predict the speaker ID for new utterances.
+
+Some diarization systems also use i-vectors, which are low-dimensional representations of short-term spectral information. I-vectors can be extracted from an audio signal using Principal Component Analysis (PCA).
+
+Diarization systems that use i-vectors typically use a Support Vector Machine (SVM) to model the distribution of i-vectors for each speaker. The SVM is
+```
+Challenges of diarization models : 
+
+```
+One challenge is that it can be difficult to automatically identify when a new speaker starts talking. This can be especially challenging in overlapping speech, or when two or more speakers are speaking at the same time. Additionally, speaker diarization can sometimes struggle with distinguishing between different voices (e.g., male and female voices, or different accents). Another challenge is that speaker diarization often relies on having good audio quality
+```
 
 Sample of Diarized file output in the `.rttm` files: 
 ![image](https://github.com/user-attachments/assets/85dc0002-7804-47ee-a4de-6336f49bdd1b)
