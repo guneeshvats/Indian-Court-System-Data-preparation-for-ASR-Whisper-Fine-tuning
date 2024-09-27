@@ -11,10 +11,13 @@ Courtroom hearings are unique in their complexity, involving multiple speakers, 
 
 ## Approach Overview
 We followed a structured approach to solve the problem, including:
-1. **Data Preprocessing**: Removing silence and segmenting audio.
-2. **Speaker Diarization**: Aligning transcripts with audio using speaker diarization.
-3. **Data Preparation**: Formatting the data for ASR fine-tuning.
-4. **Fine-tuning Whisper**: Training and evaluating the Whisper model.
+0. **Data Accumulation**: Downloaded the transcripts and correspondind court hearing in `.mp3` and converted them to `.wav`
+1. **Data Preprocessing**: Removing silence, background noise from the audio and normalized it.
+2. **Speaker Diarization**: Speaker diarization of processed audio files and created `.rttm` files.
+3. **Data Preparation**: Created json files for each dialogue in transcript paired up with the start and end time of that part in audio file along with the speaker name.
+4. **Data Preparation 2**: Segmented the audio files with this json information and created `.txt` files and `.wav` files for each dialogue.
+5. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance. 
+6. **Fine-tuning Whisper**: Extracted features, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
 
 ---
 
