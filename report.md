@@ -46,7 +46,7 @@ After silence removal
 
 
 
-<img src = "![image](https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9)" width="200"/>
+<img src="https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9" alt="image" width="200"/>
 
 
 
