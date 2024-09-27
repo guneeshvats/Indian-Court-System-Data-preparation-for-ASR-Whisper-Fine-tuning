@@ -28,18 +28,26 @@ We followed a structured approach to solve the problem, including:
 
 ## Steps to Solve the Problem
 ### 0. Data Accumulation
-
+We downloaded the transcript files for each case from the given `dataset.csv` using the  `download_transcript.py` file and then maually downloaded the corresponding audio files and saved them with the same name but obviously different extension.
+Then used the `mp3_to_wav.py` file which uses essentially `ffmpeg` to convert the extension of `.mp3` to `.wav`. 
+```Reason to do this is because .wav provides a much better resolution of the audio file than mp3s noisy format. 
+```
 
 ### 1. Data Preprocessing
-We first processed the raw audio data by removing silence, and aligning the dialogues with the respective audio segments produced by the diarization process. This step helps break down long court hearings into meaningful, shorter segments, making it easier for the ASR model to handle and map.
+We first processed the raw audio data by removing silence, removing background noise using LPF and HPF withing a certain threshold to get rid of very lowe freq and very high pitched noises fer the audio files so that we can use them for the diarization process.
 
-Sample of Raw Audio Before silence removal
+Sample of Raw Audio Before and after silence & noise removal
 
 <img src="https://github.com/user-attachments/assets/1c821ff4-20d3-4710-a3ce-291d566e0789" alt="Raw Audio Before Silence Removal" width="500"/>
 
 After silence removal
 
 <img src="https://github.com/user-attachments/assets/2efc85d7-579a-4b90-83e9-1b4eb20a551d" alt="Processed Audio After Silence Removal" width="500"/>
+
+
+
+<img src = "![image](https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9)" width="200"/>
+
 
 
 
@@ -52,6 +60,8 @@ Sample of the text aligned audio with the transcrip script has generated :
 Sample of Diarized file output: 
 ![image](https://github.com/user-attachments/assets/85dc0002-7804-47ee-a4de-6336f49bdd1b)
 
+### 3. Data Preparation 1 : 
+using the `.pdf` transcript files and the output of `diarization.py` `.rttm` files for corresponding audios we will construct json files for each case that will contain the information of each dialogues' duration before the speaker is changing, speaker name, start, end time, and the transcript that is supposedly being spoken in that time period (taken from the speaker wise dialogues from court provided transcripts. 
 
 ### 3.1 Forced Alignment (Consideration)
 While forced alignment (aligning every word in the transcript with its exact timestamp in the audio) could provide more granular alignment, it was not necessary for our task. Segment-level alignment suffices for ASR fine-tuning, and forced alignment would have added unnecessary complexity without significant benefits.
@@ -83,6 +93,9 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 2. Enhanced diarization accuracy with a better model or maybe a custom trained on indian accented english speech.
 3. Trying more variations of hyperparameter tuning (dynamic lr, batch size, etc.)
 4. Data Augmentation (to have more diverse dataset in order to prevent overfitting)
+5. Can also apply early stopping technique.
+6. Since For our particular use case training can take time but we want our model to be robust and highly accurate considering the sensitivity of the data - we can try with full fine tuning as well unlike PEFT technique that we have used
+7. use Better techqniques for bg noise removal from the audio files like spectral subtraction. 
 
 ---
 
@@ -91,9 +104,9 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 | Metric (WER)          | WER (Pretrained Model) | WER (Fine tuned model)  |
 |-----------------|---------------|----------------------------|
 | Value | **30-70%**     |          |
-| Sentence Count  | 1,200         |                      |
+| Sentence Count  | 1,200        |                       |
 | Segment Length  | 3-20 seconds |  3-20 seconds         |
-| Dataset Size    | 3,500 minutes|              |
+| Dataset Size    | 3,500 minutes|   3,500 minutes       |
 
 *The model achieved a WER of x%, which is a strong result given the complexity of the dataset. Future improvements could further reduce this error.*
 
@@ -106,8 +119,8 @@ The project successfully fine-tuned the Whisper model to improve transcription a
 
 ## Shortcomings
 1. **Overlapping Speech**: This implementation did not fully address overlapping speech in the audio segments.
-2. **Lack of Data Augmentation**: No data augmentation techniques (e.g., adding noise, pitch shifting, or speed perturbation) were applied to increase the variability in the dataset. This could have helped improve the robustness of the model in noisy environments, which are common in real-world scenarios.
-3. **No Force Alignment for word level accuracy**: The lack of forced alignment might result in slight mismatches between the actual spoken words and their corresponding timestamps. Forced alignment could have improved word-level accuracy, especially in longer segments.
+2. **Lack of Data Augmentation**: No data augmentation techniques (e.g., adding noise, pitch shifting, or speed perturbation) were applied to increase the variability in the dataset. This could have helped improve the robustness of the model in noisy environments, which are common in real-world scenarios and to prevent overfitting. 
+3. **No Force Alignment for word level accuracy**: The lack of forced alignment might result in mismatches between the actual spoken words and their corresponding timestamps. Forced alignment could have improved word-level accuracy, especially in longer segments. Since are completely dependent on diarization model and 
 4. **Diarization and Silence Removal**: The diarization model and silence removal process could be enhanced for greater accuracy.
 
 ---
