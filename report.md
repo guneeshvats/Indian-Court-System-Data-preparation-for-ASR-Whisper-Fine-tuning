@@ -21,7 +21,6 @@ We followed a structured approach to solve the problem, including:
 
 <img src="https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c" width=500/>
 
-Credit : Research Gate
 ---
 
 ## Steps to Solve the Problem
