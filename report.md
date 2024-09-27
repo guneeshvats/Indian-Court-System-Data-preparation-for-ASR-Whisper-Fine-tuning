@@ -76,18 +76,23 @@ The fine-tuning process focuses on updating a few targeted layers specified by L
 The training process was configured with hyperparameters such as batch size, learning rate, and optimization for GPU-based execution. We evaluated the model after fine-tuning to assess its performance.
 
 ### 6. Model Evaluation
-The model was evaluated using the **Word Error Rate (WER)** metric. WER is a common measure of ASR performance and provides insights into how well the model's predicted transcripts match the actual transcripts. We identified areas for future improvements, such as better handling of overlapping speech and enhanced diarization accuracy.
+The model was evaluated using the **Word Error Rate (WER)** metric. WER is a common measure of ASR performance and provides insights into how well the model's predicted transcripts match the actual transcripts. 
+
+**We identified areas for future improvements**, such as : 
+1. Better handling of overlapping speech
+2. Enhanced diarization accuracy with a better model or maybe a custom trained on indian accented english speech.
+3. Trying more variations of hyperparameter tuning (dynamic lr, batch size, etc.) 
 
 ---
 
 ## Evaluation Results
 
-| Metric          | Value (dummy values)        | Fine tuned model
+| Metric          | Value (dummy values)        | Fine tuned model  |
 |-----------------|---------------|
-| Word Error Rate | **12.3%**     |
-| Sentence Count  | 1,200         |
-| Segment Length  | 10-30 seconds |
-| Dataset Size    | 27,500 minutes|
+| Word Error Rate | **12.3%**     |          |
+| Sentence Count  | 1,200         |          |
+| Segment Length  | 10-30 seconds |          |
+| Dataset Size    | 27,500 minutes|          |
 
 *The model achieved a WER of x%, which is a strong result given the complexity of the dataset. Future improvements could further reduce this error.*
 
