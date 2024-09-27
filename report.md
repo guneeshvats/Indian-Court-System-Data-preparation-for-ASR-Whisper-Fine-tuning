@@ -19,6 +19,11 @@ We followed a structured approach to solve the problem, including:
 5. **Testing with pretrained Model**: Tested the data with `pretrained whisper model to see baseline performance. 
 6. **Fine-tuning Whisper**: Extracted features(mel spectograms) and tokenized the transcript, Created tensors for the audio segments and used the data to Train and evaluate the Whisper model.
 
+
+
+![image](https://github.com/user-attachments/assets/ae06f791-05d0-43f4-a97f-7083fc0fd40c)
+
+
 ---
 
 ## Steps to Solve the Problem
