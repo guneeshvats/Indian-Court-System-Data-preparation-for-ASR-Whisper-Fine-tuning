@@ -88,7 +88,7 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 ## Evaluation Results
 
 | Metric          | Value (dummy values)        | Fine tuned model  |
-|-----------------|---------------|
+|-----------------|---------------|---------------------------------|
 | Word Error Rate | **12.3%**     |          |
 | Sentence Count  | 1,200         |          |
 | Segment Length  | 10-30 seconds |          |
