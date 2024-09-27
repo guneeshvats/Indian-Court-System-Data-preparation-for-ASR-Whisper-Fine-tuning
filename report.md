@@ -54,9 +54,10 @@ we have used `pyyanote/speaker-diarization` model from `hugging face`. For this 
 
 ![image](https://github.com/user-attachments/assets/36228301-090e-4607-9804-313e7215fd64)
 
-```
-How does a diarization model works :
+Diagram of pyannote/diarization model structure : credits - reference 3
 
+How does a diarization model works :
+```
 1. There are two main approaches to speaker diarization: bottom-up and top-down. Bottom-up approaches first segment the audio signal into short windows, then cluster these short segments according to similarity before finally assigning labels to the clusters. Top-down approaches first assign labels to short segments, then cluster the labeled segments before finally merging them into longer speech turns.
 
 2. Both bottom-up and top-down approaches have their strengths and weaknesses, and which one is better depends on the specific application. In general, however, bottom-up approaches tend to be more accurate while top-down approaches tend to be faster.
