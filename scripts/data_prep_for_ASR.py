@@ -44,7 +44,7 @@ def prepare_asr_data(json_folder, audio_folder, output_folder):
             base_name = json_file.replace(".json", "")
             audio_file = os.path.join(audio_folder, base_name + ".wav")
             
-            # Load the JSON file
+            # Loading the JSON file
             json_path = os.path.join(json_folder, json_file)
             with open(json_path, 'r') as f:
                 aligned_data = json.load(f)
@@ -72,12 +72,11 @@ def prepare_asr_data(json_folder, audio_folder, output_folder):
                     "speaker": segment["real_speaker"]
                 })
 
-    # Save metadata to a JSON or CSV file
+    # Save metadata to a JSON 
     metadata_file = os.path.join(output_folder, 'metadata.json')
     with open(metadata_file, 'w') as mf:
         json.dump(metadata, mf, indent=4)
 
-# Example usage:
 json_folder = 'final_output_json'
 audio_folder = 'original_audio_folder'
 output_folder = 'ASR_data'
