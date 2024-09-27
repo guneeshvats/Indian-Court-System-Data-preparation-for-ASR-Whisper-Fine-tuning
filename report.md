@@ -158,7 +158,8 @@ The project successfully fine-tuned the Whisper model to improve transcription a
 ---
 
 ## References
-1. **Bredin, Hervé, and Laurent, Antoine (2021)**. "End-to-end speaker segmentation for overlap-aware resegmentation." *Proc. Interspeech 2021*.
-2. **Gaur, Yaman, et al. (2022)**. "Fine-tuning Wav2Vec 2.0 for ASR with application to data preprocessing and augmentation." *IEEE ICASSP 2022*.
-3. **Zhou, Yuxuan, et al. (2020)**. "Data augmentation and optimization strategies for end-to-end speech recognition." *Interspeech 2020*.
-4. **Baevski, Alexei, et al. (2020)**. "wav2vec 2.0: A framework for self-supervised learning of speech representations." *NeurIPS 2020*.
+1.**Bredin, Hervé, et al. (2020)**. "Development of Supervised Speaker Diarization System Based on the PyAnnote Audio Processing Library." *IEEE ICASSP 2020*.
+2. **Chen, Jiahong, et al. (2023)**. "Exploration of Whisper Fine-Tuning Strategies for Low-Resource ASR." *IEEE ICASSP 2023*.
+3. **Bredin, Hervé, and Laurent, Antoine (2021)**. "End-to-end speaker segmentation for overlap-aware resegmentation." *Proc. Interspeech 2021*.
+4. **Zhou, Yuxuan, et al. (2020)**. "Data augmentation and optimization strategies for end-to-end speech recognition." *Interspeech 2020*.
+5. **Baevski, Alexei, et al. (2020)**. "wav2vec 2.0: A framework for self-supervised learning of speech representations." *NeurIPS 2020*.
