@@ -1,3 +1,28 @@
+############################################################################################################################
+############################################################################################################################
+'''
+Purpose : Prepare Automatic Speech Recognition (ASR) data by splitting audio files based on timestamps from JSON files 
+          and creating corresponding transcript files.
+
+Steps : 
+
+1. Split Audio: Splits the audio files into segments using start and end times specified in JSON files.
+2. Create Transcript Files: Saves each transcript segment in a separate text file corresponding to the audio segment.
+3. Generate Metadata: Creates a metadata file containing information about the audio segments, transcripts, and speakers.
+
+Replace Paths : 
+
+json_folder = "path_to_json_files"
+audio_folder = "path_to_audio_files which are silence removed and processed with noise removal"
+output_folder = "path_to_save_ASR_data"
+
+Code written by: Guneesh Vats
+Date: 25th Sept, 2024
+'''
+############################################################################################################################
+############################################################################################################################
+
+
 import os
 import json
 import subprocess
