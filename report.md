@@ -110,6 +110,10 @@ What exactly are we achieving in the script - `fine_tune_whisper.py` :
 
 - **Why Whisper?**: Whisper's architecture handles long audio segments and multilingual transcripts, making it a strong candidate for court hearings.
 
+Whisper architecture : 
+![image](https://github.com/user-attachments/assets/3e846c2a-4a9c-4a8a-99cc-ce9836e87556)
+
+
 The training process was configured with hyperparameters such as batch size, learning rate, and optimization for GPU-based execution. We evaluated the model after fine-tuning to assess its performance.
 
 ### 6. Model Evaluation
