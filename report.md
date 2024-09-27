@@ -28,7 +28,8 @@ Credit : Research Gate
 ### 0. Data Accumulation
 We downloaded the transcript files for each case from the given `dataset.csv` using the  `download_transcript.py` file and then maually downloaded the corresponding audio files and saved them with the same name but obviously different extension.
 Then used the `mp3_to_wav.py` file which uses essentially `ffmpeg` to convert the extension of `.mp3` to `.wav`. 
-```Reason to do this is because .wav provides a much better resolution of the audio file than mp3s noisy format. 
+```
+Reason to do this is because .wav provides a much better resolution of the audio file than mp3s noisy format. 
 ```
 
 ### 1. Data Preprocessing
@@ -43,17 +44,20 @@ Sample of Raw Audio Before and after silence & noise removal :
 
 
 
-### 2. Speaker Diarization and Transcript Alignment
+### 2. Speaker Diarization
 We used speaker diarization techniques to separate the audio into speaker segments. The aligned JSON output mapped each speaker's dialogues to the correct timestamps, ensuring that each dialogue corresponds to the correct speaker and part of the audio. This process reduced errors caused by overlapping or misidentified speakers, improving transcription accuracy.
 
-Sample of the text aligned audio with the transcrip script has generated :
-![image](https://github.com/user-attachments/assets/73b439b0-1148-4716-b4da-8bbe224b58d0)
 
-Sample of Diarized file output: 
+
+Sample of Diarized file output in the `.rttm` files: 
 ![image](https://github.com/user-attachments/assets/85dc0002-7804-47ee-a4de-6336f49bdd1b)
+
 
 ### 3. Data Preparation 1 : 
 using the `.pdf` transcript files and the output of `diarization.py` `.rttm` files for corresponding audios we will construct json files for each case that will contain the information of each dialogues' duration before the speaker is changing, speaker name, start, end time, and the transcript that is supposedly being spoken in that time period (taken from the speaker wise dialogues from court provided transcripts. 
+
+Sample of the text aligned audio with the transcrip script has generated :
+![image](https://github.com/user-attachments/assets/73b439b0-1148-4716-b4da-8bbe224b58d0)
 
 ### 3.1 Forced Alignment (Consideration)
 While forced alignment (aligning every word in the transcript with its exact timestamp in the audio) could provide more granular alignment, it was not necessary for our task. Segment-level alignment suffices for ASR fine-tuning, and forced alignment would have added unnecessary complexity without significant benefits.
