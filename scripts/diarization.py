@@ -1,6 +1,26 @@
-# Hugging face token - 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
-# model = AutoModel.from_pretrained('pyannote/segmentation', use_auth_token="YOUR_AUTH_TOKEN")
-# model.save_pretrained("path_to_save_model")
+############################################################################################################################
+############################################################################################################################
+'''
+Purpose : Perform speaker diarization on multiple audio files using the pre-trained pyannote speaker diarization model.
+
+Steps : 
+
+1. Authentication: Use the Hugging Face token to authenticate and load the pre-trained pipeline.
+2. Process Each Audio File: Runs the speaker diarization model on each audio file in the input folder.
+3. Save Diarization Results: Saves the diarization output in the RTTM format for each audio file in the specified output folder.
+
+Replace Paths and Tokens : 
+
+no_silence_wav_folder = "path_to_input_audio_files"
+output_folder = "path_to_save_diarization_results"
+hf_token = "your_huggingface_token"
+
+Code written by: Guneesh Vats
+Date: 25th Sept, 2024
+'''
+############################################################################################################################
+############################################################################################################################
+
 from pyannote.audio import Pipeline
 from pyannote.audio import Audio
 from transformers import AutoModel
@@ -28,7 +48,6 @@ def diarize_speakers(input_audio_folder, diarization_output_folder, hf_token):
 
 
 
-# Example usage:
 no_silence_wav_folder = "/Users/guneeshvats/Desktop/Adalat AI assignment/Approach_2/no_silence_audio_folder"
 output_folder = "/Users/guneeshvats/Desktop/Adalat AI assignment/Approach_2/output_diarization_folder"
 hf_token = "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"
