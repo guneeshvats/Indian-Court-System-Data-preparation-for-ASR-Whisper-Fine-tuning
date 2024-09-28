@@ -153,7 +153,8 @@ The project successfully fine-tuned the Whisper model to improve transcription a
 2. **Lack of Data Augmentation**: No data augmentation techniques (e.g., adding noise, pitch shifting, or speed perturbation) were applied to increase the variability in the dataset. This could have helped improve the robustness of the model in noisy environments, which are common in real-world scenarios and to prevent overfitting. 
 3. **No Force Alignment for word level accuracy**: The lack of forced alignment might result in mismatches between the actual spoken words and their corresponding timestamps. Forced alignment could have improved word-level accuracy, especially in longer segments. Since are completely dependent on diarization model and 
 4. **Diarization and Silence Removal**: The diarization model and silence removal process could be enhanced for greater accuracy.
-5. **Majority Vote Algorithm**: Insetead of simple diariazation model to segment audio filw we can sentence seperation in audio and transcripts using majorioty vote algorithm. 
+5. **Majority Vote Algorithm**: Insetead of simple diariazation model to segment audio filw we can sentence seperation in audio and transcripts using majorioty vote algorithm.
+6. **Vanilla Fine Tuning**: AdamW as optimzer, train-35 epochs (10% of the total steps), dynamic lr (which now is .000001) and decaying, Checkpoints saved every 200 steps - reference : 2.
 
 ---
 
