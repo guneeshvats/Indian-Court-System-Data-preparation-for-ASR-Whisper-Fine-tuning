@@ -159,7 +159,7 @@ The project successfully fine-tuned the Whisper model to improve transcription a
 ---
 
 ## References
-1.**Bredin, Hervé, et al. (2020)**. "Development of Supervised Speaker Diarization System Based on the PyAnnote Audio Processing Library." *IEEE ICASSP 2020*.
+1. **Bredin, Hervé, et al. (2020)**. "Development of Supervised Speaker Diarization System Based on the PyAnnote Audio Processing Library." *IEEE ICASSP 2020*.
 
 2. **Chen, Jiahong, et al. (2023)**. "Exploration of Whisper Fine-Tuning Strategies for Low-Resource ASR." *IEEE ICASSP 2023*.
 
