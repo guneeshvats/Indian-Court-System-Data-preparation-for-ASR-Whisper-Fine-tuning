@@ -135,7 +135,7 @@ The model was evaluated using the **Word Error Rate (WER)** metric. WER is a com
 | Metric (WER)          | WER (Pretrained Model) | WER (Fine tuned model)  |
 |-----------------|---------------|----------------------------|
 | Value | **30-70%**     |          |
-| Sentence Count  | 1,200        |                       |
+| Sentence Count  |         |                       |
 | Segment Length  | 3-20 seconds |  3-20 seconds         |
 | Dataset Size    | 27500 minutes|   27500 minutes       |
 
