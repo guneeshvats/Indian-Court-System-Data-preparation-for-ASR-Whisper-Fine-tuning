@@ -124,15 +124,15 @@ training_args = Seq2SeqTrainingArguments(
     num_train_epochs=3,
     eval_strategy="steps",
     save_strategy="steps",
-    save_steps=100,  # Save checkpoints every 100 steps
+    save_steps=100, 
     evaluation_strategy="steps",
     eval_steps=100,
     save_total_limit=3,  # Keep only last 3 checkpoints
     predict_with_generate=True,
     generation_max_length=225,
-    fp16=True,  # Enable mixed precision to save memory and improve performance
-    report_to=["tensorboard"],  # Enable reporting to Tensorboard for visualization
-    load_best_model_at_end=True,  # Load the best model at the end of training
+    fp16=True,  
+    report_to=["tensorboard"], 
+    load_best_model_at_end=True
 )
 
 # 6. Load Evaluation Metric
