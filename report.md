@@ -36,7 +36,7 @@ We first processed the raw audio data by removing silence, removing background n
 This was done using the script in file `silence_removal_parallel.py`
 To make the process faster I parallelzied the processing of multiple files based on the CPU cores availaible on the system. Detailes instructions are there in the `readme.md` and `top comment` of the script. 
 
-Sample of Raw Audio Before and after silence & noise removal : 
+Sample of Raw Audio Before and after noise removal : 
 
 <img src="https://github.com/user-attachments/assets/c72f9fdc-13fb-478d-9c6d-bf3d8472a8d9" alt="image" width="500"/>
 
